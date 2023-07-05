@@ -1,0 +1,358 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333333;
+  position: relative;
+  padding-bottom: 3em;
+  min-height: 100vh;
+  background-image: url(../imagenes/fondo-web.png);
+}
+
+/* Estilos para elementos de encabezado y navegación */
+/* header.barra {
+    background-color:#333333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+
+  #checkbox-menu, label.menu {
+    color: #f7f7f7 ;
+    display: none;
+    font-size: 35px;
+    color: #333333;
+    cursor: pointer;
+  } */
+
+.navbar-brand,
+.nav-link {
+  color: white;
+
+}
+
+.navbar {
+  background-color: #333333;
+}
+
+
+/* Estilos de sección de intro */
+#intro {
+  text-align: center;
+  text-emphasis-color: red;
+  padding: 50px;
+  background-image: url("../imagenes/estetica.jfif");
+  margin-top: 7%;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+.l1 {
+
+  /* background-image: url(../imagenes/camuflaje.jfif); */
+  background-size: cover;
+
+}
+
+#intro h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+#intro a {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 1.2em;
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* seccion de servicios */
+#servicios {
+  text-align: center;
+
+
+}
+
+#servicios h2 {
+  font-size: 2.5em;
+}
+
+
+#servicios ul {
+  list-style: none;
+
+}
+
+#servicios ul li {
+  font-size: 1.2em;
+  background-color: #f7f7f7;
+}
+
+.contenedors {
+  width: 100%;
+  height: 75%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 300px 300px;
+  grid-template-areas:
+    "l1 l2"
+    "l3 l4"
+
+}
+
+.l1 {
+  grid-area: l1;
+  background-image: url(../imagenes/camuflaje.jfif);
+  margin: 10px;
+
+
+
+}
+
+.l2 {
+  grid-area: l2;
+  background-image: url(../imagenes/pigmentacion1.jfif);
+  margin: 10px;
+}
+
+.l3 {
+  grid-area: l3;
+  background-image: url(../imagenes/mesoterapia.jpg);
+  margin: 10px;
+}
+
+.l4 {
+  grid-area: l4;
+  background-image: url(../imagenes/delineado.jfif);
+  margin: 10px;
+}
+
+.contenedors li {
+  border: 1px solid black;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+/* seccion bootstrap servicios */
+.conteiner {
+  margin: 10px;
+
+}
+
+.img1,
+.img2,
+.img3 {
+  width: 350px;
+  border-radius: 15px;
+
+}
+
+/* seccion de trabajos */
+#trabajos {
+  background-color: #ffffff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#trabajos h2 {
+  font-size: 2.5em;
+}
+
+#trabajos div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+#trabajos img {
+  margin: 10px;
+  max-width: 400px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.linkpagina {
+  text-decoration: none;
+  color: blue;
+}
+
+/* pagina de contacto */
+#contacto {
+  background-color: #333333;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#contacto h2 {
+  font-size: 2.5em;
+  color: #ffffff;
+}
+
+#contacto form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#contacto label {
+  font-size: 1.2em;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+#contacto input,
+#contacto textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+.linkcomentario {
+  text-decoration: none;
+}
+
+/* Estilos del pie de página */
+footer {
+  background-color: #f7f7f7;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2em;
+
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#footer a:link {
+  text-transform: uppercase;
+}
+
+/* pagina servicios */
+
+/* .cestrias {
+  overflow: auto;
+}
+
+.cestrias img {
+  margin-top: 7%;
+  width: 250px;
+  height: 300px;
+  float: left;
+  margin-right: 20px;
+  margin-left: 20;
+}
+
+.textoestrias {
+  margin-top: 7%;
+
+}
+
+.titulocamu {
+  margin-top: 7%;
+} */
+
+/* pagina de trabajos realizados */
+
+.imgcliente {
+  width: 250px;
+  height: 350px;
+  float: left;
+
+}
+
+.clienta {
+  width: 250px;
+  height: 350px;
+  display: block;
+  float: right;
+}
+
+.manchasfaciales {
+  text-align: left;
+  margin-right: 10px;
+}
+
+.textocliente {
+  text-align: right;
+  margin-left: 10px;
+}
+
+/* pagina pedi turno */
+
+#pedirturno {
+  padding: 9%;
+  text-align: center;
+  border: 5px solid black
+}
+
+#pedirturno label {
+  font-size: 20px;
+
+}
+
+/* fin pagina pedir turno */
+/* media queries */
+
+@media screen and (max-width:815px) {
+  header.barra {
+    position: absolute;
+    background: transparent;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+
+  }
+
+  label.menu {
+    display: block;
+  }
+
+  #checkbox-menu:checked~ul {
+    display: block;
+  }
+
+
+
+  #intro {
+    margin-top: 0%;
+  }
+}
