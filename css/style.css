@@ -292,29 +292,7 @@ footer {
 
 /* pagina de trabajos realizados */
 
-.imgcliente {
-  width: 250px;
-  height: 350px;
-  float: left;
 
-}
-
-.clienta {
-  width: 250px;
-  height: 350px;
-  display: block;
-  float: right;
-}
-
-.manchasfaciales {
-  text-align: left;
-  margin-right: 10px;
-}
-
-.textocliente {
-  text-align: right;
-  margin-left: 10px;
-}
 
 /* pagina pedi turno */
 
@@ -330,7 +308,8 @@ footer {
 }
 
 /* fin pagina pedir turno */
-/* media queries */
+
+/* media queries pagina inicio */
 
 @media screen and (max-width:815px) {
 
@@ -351,30 +330,5 @@ footer {
   .l1, .l2, .l3, .l4 {
     height: 150px;
   }
-/*   header.barra {
-    position: absolute;
-    background: transparent;
-    display: flex;
-    justify-content: flex-start;
-  }
 
-  nav ul {
-    display: none;
-    flex-direction: column;
-
-  }
-
-  label.menu {
-    display: block;
-  }
-
-  #checkbox-menu:checked~ul {
-    display: block;
-  }
-
-
-
-  #intro {
-    margin-top: 0%;
-  } */
 }
