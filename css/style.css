@@ -127,7 +127,7 @@ body {
 
 .l1 {
   grid-area: l1;
-  background-image: url(../imagenes/camuflaje.jfif);
+ /*  background-image: url(../imagenes/camuflaje.jfif); */
   margin: 10px;
 
 
@@ -150,6 +150,10 @@ body {
   grid-area: l4;
   background-image: url(../imagenes/delineado.jfif);
   margin: 10px;
+}
+li img {
+  width: 100%;
+/*   height: 100%; */
 }
 
 .contenedors li {
