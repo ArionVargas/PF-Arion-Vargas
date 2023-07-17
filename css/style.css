@@ -10,41 +10,7 @@ body {
 }
 
 /* Estilos para elementos de encabezado y navegación */
-/* header.barra {
-    background-color:#333333;
-    position: fixed;
-    width: 100%;
-    top: 0;
 
-  }
-
-  nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-  }
-  nav ul li {
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-  }
-
-
-  #checkbox-menu, label.menu {
-    color: #f7f7f7 ;
-    display: none;
-    font-size: 35px;
-    color: #333333;
-    cursor: pointer;
-  } */
 
 .navbar-brand,
 .nav-link {
@@ -111,70 +77,43 @@ body {
 #servicios ul li {
   font-size: 1.2em;
   background-color: #f7f7f7;
+  overflow: hidden;
 }
 
 .contenedors {
-  width: 100%;
-  
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 300px 300px;
-  grid-template-areas:
-    "l1 l2"
-    "l3 l4"
+  grid-auto-rows: 350px;
+  padding: 10px;
+  grid-gap: 10px;
 
 }
 
-.l1 {
-  grid-area: l1;
- /*  background-image: url(../imagenes/camuflaje.jfif); */
-  margin: 10px;
-
-
-
-}
-
-.l2 {
-  grid-area: l2;
-  background-image: url(../imagenes/pigmentacion1.jfif);
-  margin: 10px;
-}
-
-.l3 {
-  grid-area: l3;
-  background-image: url(../imagenes/mesoterapia.jpg);
-  margin: 10px;
-}
-
-.l4 {
-  grid-area: l4;
-  background-image: url(../imagenes/delineado.jfif);
-  margin: 10px;
-}
-li img {
-  width: 100%;
-/*   height: 100%; */
-}
-
-.contenedors li {
+.galeria-item{
+  position: relative;
   border: 1px solid black;
-  background-repeat: no-repeat;
+}
+
+.galeria-texto{
+  position: absolute;
+  padding: 20px;
+}
+
+.galeria-img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-/* seccion bootstrap servicios */
-.conteiner {
-  margin: 10px;
 
-}
 
-.img1,
+/* .img1,
 .img2,
 .img3 {
   width: 350px;
   border-radius: 15px;
 
-}
+} */
 
 /* seccion de trabajos */
 #trabajos {
@@ -272,27 +211,7 @@ footer {
 
 }
 
-/* .cestrias {
-  overflow: auto;
-}
 
-.cestrias img {
-  margin-top: 7%;
-  width: 250px;
-  height: 300px;
-  float: left;
-  margin-right: 20px;
-  margin-left: 20;
-}
-
-.textoestrias {
-  margin-top: 7%;
-
-}
-
-.titulocamu {
-  margin-top: 7%;
-} */
 
 /* pagina de trabajos realizados */
 
@@ -315,24 +234,24 @@ footer {
 
 /* media queries pagina inicio */
 
-@media screen and (max-width:815px) {
+@media screen and (max-width:768px) {
 
-  .contenedors {
-    width: 100%;
-    height: 75%;
-    display: grid;
-    grid-template-columns:1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "l1"
-    "l2"
-    "l3"
-    "l4"
-  
+  .contenedors{
+    grid-template-columns: 1fr;
+    grid-auto-rows: 350px;
+    padding: 10px;
+    grid-gap: 10px;
   }
+  .galeria-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 
-  .l1, .l2, .l3, .l4 {
-    height: 150px;
+  }
+  .galeria-texto{
+    position: absolute;
+    padding: 20px;
+    bottom: 0;
   }
 
 }
