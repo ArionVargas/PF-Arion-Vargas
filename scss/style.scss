@@ -22,6 +22,7 @@ body {
 
 .navbar {
     background-color: #333333;
+    
 }
 
 /* Estilos de sección de intro */
@@ -29,8 +30,8 @@ body {
     text-align: center;
     text-emphasis-color: red;
     padding: 50px;
-    background-image: url("../imagenes/estetica.jfif");
-    margin-top: 7%;
+    background-image: url("../imagenes/fondoinicio.jpg");
+    margin-top: 4%;
     background-size: cover;
     background-position: center;
     color: #ffffff;
@@ -69,32 +70,33 @@ body {
         }
     }
 
-    .contenedors {
+    
 
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 350px;
-        padding: 10px;
-        grid-gap: 10px;
 
-        .galeria-item {
-            position: relative;
-            border: 1px solid black;
-        }
+}
+.contenedors {
 
-        .galeria-texto {
-            position: absolute;
-            padding: 20px;
-        }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 350px;
+    padding: 10px;
+    grid-gap: 10px;
 
-        .galeria-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+    .galeria-item {
+        position: relative;
+        border: 1px solid black;
     }
 
+    .galeria-texto {
+        position: absolute;
+        padding: 20px;
+    }
 
+    .galeria-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 /* seccion de trabajos index */

@@ -5,19 +5,20 @@
       grid-auto-rows: 350px;
       padding: 10px;
       grid-gap: 10px;
+      .galeria-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    
+      }
+      .galeria-texto{
+        position: absolute;
+        padding: 20px;
+        bottom: 0;
+      }
+    
     }
-    .galeria-img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-  
-    }
-    .galeria-texto{
-      position: absolute;
-      padding: 20px;
-      bottom: 0;
-    }
-  
+    
     #intro {
       text-align: center;
       text-emphasis-color: red;
