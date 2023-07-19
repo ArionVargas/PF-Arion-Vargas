@@ -7,6 +7,10 @@ body {
     padding-bottom: 3em;
     min-height: 100vh;
     background-image: url(../imagenes/fondo-web.png);
+
+    a {
+        text-decoration: none;
+    }
 }
 
 /* Estilos para elementos de encabezado y navegación */
@@ -193,10 +197,28 @@ footer {
 /* pagina servicios */
 .cestrias {
     display: grid;
-  
-  }
+    grid-template-columns: repeat(2 ,1fr);
 
-  
+ 
+    img {
+        width: 100%;
+    }
+   
+}
+
+
+/* pagina pedi turno */
+
+#pedirturno {
+    padding: 9%;
+    text-align: center;
+    border: 5px solid black
+}
+
+#pedirturno label {
+    font-size: 20px;
+
+}
 
 
 
