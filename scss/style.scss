@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333333;
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+    background-image: url(../imagenes/fondo-web.png);
+}
+
+/* Estilos para elementos de encabezado y navegación */
+
+.navbar-brand,
+.nav-link {
+    color: white;
+}
+
+.navbar {
+    background-color: #333333;
+}
+
+/* Estilos de sección de intro */
+#intro {
+    text-align: center;
+    text-emphasis-color: red;
+    padding: 50px;
+    background-image: url("../imagenes/estetica.jfif");
+    margin-top: 7%;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+
+    h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    a {
+        background-color: #333333;
+        color: #ffffff;
+        font-size: 1.2em;
+        padding: 5px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+}
+
+/* seccion de servicios */
+#servicios {
+    text-align: center;
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            font-size: 1.2em;
+            background-color: #f7f7f7;
+            overflow: hidden;
+        }
+    }
+
+    .contenedors {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 350px;
+        padding: 10px;
+        grid-gap: 10px;
+
+        .galeria-item {
+            position: relative;
+            border: 1px solid black;
+        }
+
+        .galeria-texto {
+            position: absolute;
+            padding: 20px;
+        }
+
+        .galeria-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+
+}
+
+/* seccion de trabajos index */
+#trabajos {
+    background-color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    img {
+        margin: 10px;
+        max-width: 400px;
+        max-height: 400px;
+        object-fit: cover;
+    }
+
+
+}
+
+.linkpagina {
+    text-decoration: none;
+    color: blue;
+}
+
+/* pagina de contacto */
+#contacto {
+    background-color: #333333;
+    padding: 50px 0;
+    text-align: center;
+
+    h2 {
+        font-size: 2.5em;
+        color: #ffffff;
+    }
+
+    .linkcomentario {
+        text-decoration: none;
+    }
+}
+
+#contacto {
+
+    & form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+
+        label {
+            font-size: 1.2em;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%
+        }
+    }
+
+
+
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        font-size: 1.2em;
+    }
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    a:link {
+        text-transform: uppercase;
+    }
+}
+
+
+/* pagina servicios */
+.cestrias {
+    display: grid;
+  
+  }
+
+  
+
+
+
+
+
+
+@import "partials/queries"
