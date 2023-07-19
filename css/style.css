@@ -94,15 +94,14 @@ body a {
 #trabajos h2 {
   font-size: 2.5em;
 }
-#trabajos div {
+
+div {
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 20px;
 }
-#trabajos img {
-  margin: 10px;
+div img {
+  width: 100%;
   max-width: 400px;
   max-height: 400px;
   object-fit: cover;
