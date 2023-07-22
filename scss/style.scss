@@ -22,7 +22,7 @@ body {
 
 .navbar {
     background-color: #333333;
-    
+
 }
 
 /* Estilos de sección de intro */
@@ -70,10 +70,11 @@ body {
         }
     }
 
-    
+
 
 
 }
+
 .contenedors {
 
     display: grid;
@@ -101,7 +102,7 @@ body {
 
 /* seccion de trabajos index */
 #trabajos {
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     padding: 50px 0;
     text-align: center;
 
@@ -116,6 +117,7 @@ div #carouselExample {
     width: 100%;
     display: flex;
     justify-content: center;
+
     img {
         width: 100%;
         max-width: 400px;
@@ -196,16 +198,29 @@ footer {
 
 
 /* pagina servicios */
-.cestrias {
+main .services {
     display: grid;
-    grid-template-columns: repeat(2 ,1fr);
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 2rem;
+    margin-top: 3%;
 
- 
-    img {
-        width: 100%;
+    .service {
+        padding: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        text-align: center;
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 5px;
+        }
     }
-   
 }
+
+
+
 
 
 /* pagina pedi turno */
@@ -213,10 +228,10 @@ footer {
 #pedirturno {
     padding: 9%;
     text-align: center;
-    border: 5px solid black
-    label {
+
+    border: 5px solid black label {
         font-size: 20px;
-    
+
     }
 }
 

@@ -33,4 +33,10 @@
     #intro{
       width: 100%;
     }
+    
+  }
+  @media screen and (max-width:768px){
+    main .services{
+      grid-template-columns: 1fr;
+    }
   }
