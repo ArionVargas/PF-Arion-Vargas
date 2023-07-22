@@ -95,12 +95,12 @@ body a {
   font-size: 2.5em;
 }
 
-div {
+div #carouselExample {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-div img {
+div #carouselExample img {
   width: 100%;
   max-width: 400px;
   max-height: 400px;
@@ -177,7 +177,8 @@ footer a:link {
 #pedirturno {
   padding: 9%;
   text-align: center;
-  border: 5px solid black;
+  border: 5px solid black label;
+  border-font-size: 20px;
 }
 
 #pedirturno label {

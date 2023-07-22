@@ -1,71 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Pedir-turno</title>
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Pedir-turno</title>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
-          <div class="container">
-            <a class="navbar-brand" href="../index.html">Inicio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="./servicios.html">Servicios</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./trabajos-realizados.html">Trabajos realizados</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pedir-turno.html">Pedir turno</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./contacto.html">Contacto</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-    
-      </header>
-<div id="pedirturno">
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./trabajos-realizados.html">Trabajos realizados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pedir-turno.html">Pedir turno</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <div id="pedirturno">
     <label for="nombre">Nombre completo:</label>
     <input type="text" id="nombre" name="nombre" required>
-<br>
+    <br>
     <label for="email">Correo electrónico:</label>
     <input type="email" id="email" name="email" required>
-<br>
+    <br>
     <label for="telefono">Teléfono:</label>
     <input type="tel" id="telefono" name="telefono" required>
-<br>
+    <br>
     <label for="fecha">Fecha para el turno:</label>
     <input type="datetime-local" id="fecha" name="fecha" required>
-<br>
+    <br>
     <label for="servicio">Servicio solicitado:</label>
     <select id="servicio" name="servicio" required>
-    <option value="">--Seleccione una opción--</option>
-    <option value="camuflaje de estrias">camuflaje de estrias</option>
-    <option value="mesoterapia">mesoterapia</option>
-    <option value="micropigmentacion">micropigmentacion</option>
-    <option value="delineado permanente">delineado permanente</option>
-<br>
-    <input type="submit" value="pedir turno">
+      <option value="">--Seleccione una opción--</option>
+      <option value="camuflaje de estrias">camuflaje de estrias</option>
+      <option value="mesoterapia">mesoterapia</option>
+      <option value="micropigmentacion">micropigmentacion</option>
+      <option value="delineado permanente">delineado permanente</option>
+      <br>
+      <input type="submit" value="pedir turno">
 
     </select>
-    </div>
-    <section id="footer">
-        <p>Centro de Estética Femenino &copy; 2023.Nuestras redes sociales son <a class="linkpagina" href="https://www.facebook.com/camuflaje.deestrias.96?mibextid=ZbWKwL">Facebook</a>
-    <a class="linkpagina" href="https://instagram.com/deestriastw?igshid=ZDc4ODBmNjlmNQ==">Instagram</a></p>
-    </section>
-    <script src="../js/popper.js"></script>
+  </div>
+  <section id="footer">
+    <p>Centro de Estética Femenino &copy; 2023.Nuestras redes sociales son <a class="linkpagina"
+        href="https://www.facebook.com/camuflaje.deestrias.96?mibextid=ZbWKwL">Facebook</a>
+      <a class="linkpagina" href="https://instagram.com/deestriastw?igshid=ZDc4ODBmNjlmNQ==">Instagram</a>
+    </p>
+  </section>
+  <script src="../js/popper.js"></script>
   <script src="../js/bootstrap.js"></script>
 </body>
+
 </html>
