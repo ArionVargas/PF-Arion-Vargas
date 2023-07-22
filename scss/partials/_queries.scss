@@ -1,42 +1,33 @@
 @media screen and (max-width:768px) {
 
-    .contenedors{
-      grid-template-columns: 1fr;
-      grid-auto-rows: 350px;
-      padding: 10px;
-      grid-gap: 10px;
-      .galeria-img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    
-      }
-      .galeria-texto{
-        position: absolute;
-        padding: 20px;
-        bottom: 0;
-      }
-    
+  .contenedors {
+    grid-template-columns: 1fr;
+
+    .galeria-texto {
+      position: absolute;
+      padding: 20px;
+      bottom: 0;
     }
-    
-    #intro {
-      text-align: center;
-      text-emphasis-color: red;
-      padding: 50px;
-      background-image: url("../imagenes/estetica.jfif");
-      margin-top: 7%;
-      background-size: cover;
-      background-position: center;
-      color: #ffffff;
-    }
-  
-    #intro{
-      width: 100%;
-    }
-    
+
   }
-  @media screen and (max-width:768px){
-    main .services{
-      grid-template-columns: 1fr;
-    }
+
+  #intro {
+    background-image: url("../imagenes/estetica.jfif");
+    margin-top: 7%;
   }
+
+  #intro {
+    width: 100%;
+  }
+
+  #pedirturno {
+    margin-top: 5%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  main .services {
+    grid-template-columns: 1fr;
+  }
+
+}
