@@ -215,6 +215,9 @@ main .services .service img {
     padding: 20px;
     bottom: 0;
   }
+  .contenedors .galeria-img {
+    width: 100%;
+  }
   #intro {
     background-image: url("../imagenes/estetica.jfif");
     margin-top: 7%;
