@@ -105,7 +105,7 @@ div #carouselExample {
   justify-content: center;
 }
 div #carouselExample img {
-  width: 100%;
+  width: 75%;
   max-width: 400px;
   max-height: 400px;
   object-fit: cover;
