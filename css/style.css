@@ -99,16 +99,19 @@ body a {
   font-size: 2.5em;
 }
 
-div #carouselExample {
+div .container #carouselExample {
   width: 100%;
   display: flex;
   justify-content: center;
-}
-div #carouselExample img {
-  width: 75%;
-  max-width: 400px;
-  max-height: 400px;
-  object-fit: cover;
+  align-items: center;
+  /*  .carousel-inner {
+       .carousel-item {
+           width: 75%;
+           max-width: 400px;
+           max-height: 400px;
+           object-fit: cover;
+       }
+   } */
 }
 
 .linkpagina {
@@ -159,10 +162,8 @@ div #carouselExample img {
   text-align: center;
   font-size: 1.2em;
   position: absolute;
-  /* bottom: 0; */
   left: 0;
   right: 0;
-  /* background-color: rgba(0, 0, 0, 0,1); */
 }
 #footer a:link {
   text-transform: uppercase;
@@ -190,7 +191,12 @@ main .services .service img {
 }
 
 /* pagina de trabajos realizados */
-.card {
+.cartas {
+  display: grid;
+  height: 100%;
+  place-items: center;
+}
+.cartas .card {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -200,6 +206,9 @@ main .services .service img {
   text-align: center;
   border: 5px solid black label;
   border-font-size: 20px;
+}
+#pedirturno label {
+  padding: 5px;
 }
 
 #pedirturno label {

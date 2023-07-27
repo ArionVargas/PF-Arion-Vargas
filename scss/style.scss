@@ -18,14 +18,11 @@ body {
 .navbar-brand,
 .nav-link {
     color: white;
-    
+
 }
 
 .navbar {
     background-color: #333333;
-    
-    
-
 }
 
 /* Estilos de sección de intro */
@@ -100,8 +97,9 @@ body {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        &:hover{
-            opacity: 0.8; 
+
+        &:hover {
+            opacity: 0.8;
             cursor: pointer;
         }
     }
@@ -120,17 +118,21 @@ body {
 
 }
 
-div #carouselExample {
+div .container #carouselExample {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 
-    img {
-        width: 75%;
-        max-width: 400px;
-        max-height: 400px;
-        object-fit: cover;
-    }
+   /*  .carousel-inner {
+        .carousel-item {
+            width: 75%;
+            max-width: 400px;
+            max-height: 400px;
+            object-fit: cover;
+        }
+    } */
+
 }
 
 
@@ -193,16 +195,14 @@ div #carouselExample {
     text-align: center;
     font-size: 1.2em;
     position: absolute;
-    /* bottom: 0; */
     left: 0;
     right: 0;
 
 
     a:link {
         text-transform: uppercase;
-        
+
     }
-    /* background-color: rgba(0, 0, 0, 0,1); */
 }
 
 
@@ -229,11 +229,23 @@ main .services {
         }
     }
 }
+
 /* pagina de trabajos realizados */
 
-.card {
-    background-color: rgba(255, 255, 255, 0.2);
+.cartas{
+    display: grid;
+  height: 100%;
+  place-items: center;
+
+  
+    .card {
+        background-color: rgba(255, 255, 255, 0.2);
+        
+    }
+    
 }
+
+
 
 
 
@@ -243,6 +255,11 @@ main .services {
 #pedirturno {
     padding: 9%;
     text-align: center;
+
+    label {
+        padding: 5px;
+
+    }
 
     border: 5px solid black label {
         font-size: 20px;
