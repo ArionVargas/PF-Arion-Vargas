@@ -124,7 +124,7 @@ div .container #carouselExample {
     justify-content: center;
     align-items: center;
 
-   /*  .carousel-inner {
+    /*  .carousel-inner {
         .carousel-item {
             width: 75%;
             max-width: 400px;
@@ -232,17 +232,17 @@ main .services {
 
 /* pagina de trabajos realizados */
 
-.cartas{
+.cartas {
     display: grid;
-  height: 100%;
-  place-items: center;
+    height: 100%;
+    place-items: center;
 
-  
+
     .card {
         background-color: rgba(255, 255, 255, 0.2);
-        
+
     }
-    
+
 }
 
 
@@ -258,18 +258,8 @@ main .services {
 
     label {
         padding: 5px;
-
-    }
-
-    border: 5px solid black label {
         font-size: 20px;
-
     }
-}
-
-#pedirturno label {
-    font-size: 20px;
-
 }
 
 

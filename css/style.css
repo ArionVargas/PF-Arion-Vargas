@@ -105,13 +105,13 @@ div .container #carouselExample {
   justify-content: center;
   align-items: center;
   /*  .carousel-inner {
-       .carousel-item {
-           width: 75%;
-           max-width: 400px;
-           max-height: 400px;
-           object-fit: cover;
-       }
-   } */
+      .carousel-item {
+          width: 75%;
+          max-width: 400px;
+          max-height: 400px;
+          object-fit: cover;
+      }
+  } */
 }
 
 .linkpagina {
@@ -204,14 +204,9 @@ main .services .service img {
 #pedirturno {
   padding: 9%;
   text-align: center;
-  border: 5px solid black label;
-  border-font-size: 20px;
 }
 #pedirturno label {
   padding: 5px;
-}
-
-#pedirturno label {
   font-size: 20px;
 }
 

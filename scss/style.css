@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -9,6 +10,7 @@ body {
   min-height: 100vh;
   background-image: url(../imagenes/fondo-web.png);
 }
+
 body a {
   text-decoration: none;
 }
@@ -27,7 +29,7 @@ body a {
 #intro {
   text-align: center;
   -webkit-text-emphasis-color: red;
-          text-emphasis-color: red;
+  text-emphasis-color: red;
   padding: 50px;
   background-image: url("../imagenes/estetica.jfif");
   margin-top: 7%;
@@ -35,10 +37,12 @@ body a {
   background-position: center;
   color: #ffffff;
 }
+
 #intro h1 {
   font-size: 3em;
   margin-bottom: 20px;
 }
+
 #intro a {
   background-color: #333333;
   color: #ffffff;
@@ -53,17 +57,21 @@ body a {
 #servicios {
   text-align: center;
 }
+
 #servicios h2 {
   font-size: 2.5em;
 }
+
 #servicios ul {
   list-style: none;
 }
+
 #servicios ul li {
   font-size: 1.2em;
   background-color: #f7f7f7;
   overflow: hidden;
 }
+
 #servicios .contenedors {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -71,19 +79,22 @@ body a {
   padding: 10px;
   grid-gap: 10px;
 }
+
 #servicios .contenedors .galeria-item {
   position: relative;
   border: 1px solid black;
 }
+
 #servicios .contenedors .galeria-texto {
   position: absolute;
   padding: 20px;
 }
+
 #servicios .contenedors .galeria-img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /* seccion de trabajos index */
@@ -92,9 +103,11 @@ body a {
   padding: 50px 0;
   text-align: center;
 }
+
 #trabajos h2 {
   font-size: 2.5em;
 }
+
 #trabajos div {
   display: flex;
   justify-content: center;
@@ -102,12 +115,13 @@ body a {
   flex-wrap: wrap;
   margin-top: 20px;
 }
+
 #trabajos img {
   margin: 10px;
   max-width: 400px;
   max-height: 400px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .linkpagina {
@@ -121,10 +135,12 @@ body a {
   padding: 50px 0;
   text-align: center;
 }
+
 #contacto h2 {
   font-size: 2.5em;
   color: #ffffff;
 }
+
 #contacto .linkcomentario {
   text-decoration: none;
 }
@@ -135,14 +151,17 @@ body a {
   align-items: center;
   margin-top: 20px;
 }
+
 #contacto form label {
   font-size: 1.2em;
   color: #ffffff;
   margin-bottom: 10px;
 }
+
 #contacto form input {
   width: 100%;
 }
+
 #contacto textarea {
   width: 100%;
   padding: 10px;
@@ -163,6 +182,7 @@ footer {
   left: 0;
   right: 0;
 }
+
 footer a:link {
   text-transform: uppercase;
 }
@@ -172,6 +192,7 @@ footer a:link {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+
 .cestrias img {
   width: 100%;
 }
@@ -194,21 +215,24 @@ footer a:link {
     padding: 10px;
     grid-gap: 10px;
   }
+
   .galeria-img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
+
   .galeria-texto {
     position: absolute;
     padding: 20px;
     bottom: 0;
   }
+
   #intro {
     text-align: center;
     -webkit-text-emphasis-color: red;
-            text-emphasis-color: red;
+    text-emphasis-color: red;
     padding: 50px;
     background-image: url("../imagenes/estetica.jfif");
     margin-top: 7%;
@@ -216,7 +240,10 @@ footer a:link {
     background-position: center;
     color: #ffffff;
   }
+
   #intro {
     width: 100%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
