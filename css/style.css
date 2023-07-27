@@ -154,17 +154,17 @@ div #carouselExample img {
 }
 
 /* Estilos del pie de página */
-footer {
-  background-color: #f7f7f7;
-  padding: 20px;
+#footer {
+  padding: 50px;
   text-align: center;
   font-size: 1.2em;
   position: absolute;
-  bottom: 0;
+  /* bottom: 0; */
   left: 0;
   right: 0;
+  /* background-color: rgba(0, 0, 0, 0,1); */
 }
-footer a:link {
+#footer a:link {
   text-transform: uppercase;
 }
 
