@@ -116,9 +116,13 @@ div .container #carouselExample {
   } */
 }
 
-.linkpagina {
+.linkpagina1 {
   text-decoration: none;
   color: blue;
+}
+
+.linkpagina2 {
+  color: red;
 }
 
 /* pagina de contacto */
