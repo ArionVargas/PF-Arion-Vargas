@@ -1,13 +1,15 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    color: #333333;
-    position: relative;
-    padding-bottom: 3em;
-    min-height: 100vh;
-    background-image: url(../imagenes/fondo-web.png);
-  }
-  body a {
-    text-decoration: none;
-  }
+  margin: 0;
+  font-family: 'Carter One', cursive;
+  font-family: 'Handlee', cursive;
+  background-color: #f7f7f7;
+  color: #333333;
+  position: relative;
+  padding-bottom: 3em;
+  min-height: 100vh;
+  background-image: url(../imagenes/fondo-web.png);
+}
+
+body a {
+  text-decoration: none;
+}

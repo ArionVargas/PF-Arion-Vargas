@@ -2,7 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Handlee&display=swap");
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Carter One", cursive;
+  font-family: "Handlee", cursive;
   background-color: #f7f7f7;
   color: #333333;
   position: relative;
@@ -23,10 +24,6 @@ body a {
 
 .navbar {
   background-color: #333333;
-}
-.navbar ul a {
-  display: flexbox;
-  justify-content: end;
 }
 
 /* Estilos de sección de intro */
@@ -74,12 +71,16 @@ body a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 350px;
-  padding: 10px;
-  grid-gap: 10px;
+  padding: 30px;
+  grid-gap: 20px;
 }
 .contenedors .galeria-item {
   position: relative;
-  border: 1px solid black;
+  border: 1px solid #333333;
+  transition: transform 0.2s;
+}
+.contenedors .galeria-item:hover {
+  transform: scale(1.05);
 }
 .contenedors .galeria-texto {
   position: absolute;
@@ -90,14 +91,9 @@ body a {
   height: 100%;
   object-fit: cover;
 }
-.contenedors .galeria-img:hover {
-  opacity: 0.8;
-  cursor: pointer;
-}
 
 /* seccion de trabajos index */
 #trabajos {
-  /* background-color: #ffffff; */
   padding: 50px 0;
   text-align: center;
 }
@@ -110,14 +106,6 @@ div .container #carouselExample {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*  .carousel-inner {
-      .carousel-item {
-          width: 75%;
-          max-width: 400px;
-          max-height: 400px;
-          object-fit: cover;
-      }
-  } */
 }
 
 .linkpagina1 {
@@ -177,6 +165,12 @@ div .container #carouselExample {
 }
 #footer a:link {
   text-transform: uppercase;
+}
+#footer a:hover {
+  transform: scale(1.05);
+}
+#footer a:active {
+  transform: scale(1.05);
 }
 
 /* pagina servicios */
