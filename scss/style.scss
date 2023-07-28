@@ -1,21 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Handlee&display=swap');
+@import "partials/reset";
 
-
-body {
-    margin: 0;
-    font-family: 'Carter One', cursive;
-    font-family: 'Handlee', cursive;
-    background-color: #f7f7f7;
-    color: #333333;
-    position: relative;
-    padding-bottom: 3em;
-    min-height: 100vh;
-    background-image: url(../imagenes/fondo-web.png);
-
-    a {
-        text-decoration: none;
-    }
-}
 
 /* Estilos para elementos de encabezado y navegación */
 
@@ -27,6 +12,11 @@ body {
 
 .navbar {
     background-color: #333333;
+
+    ul a {
+        display: flexbox;
+        justify-content: end;
+    }
 }
 
 /* Estilos de sección de intro */
@@ -145,7 +135,8 @@ div .container #carouselExample {
     text-decoration: none;
     color: blue;
 }
-.linkpagina2{
+
+.linkpagina2 {
     color: red;
 }
 
@@ -205,11 +196,10 @@ div .container #carouselExample {
     left: 0;
     right: 0;
 
-
     a:link {
         text-transform: uppercase;
-
     }
+
 }
 
 

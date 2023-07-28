@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Handlee&display=swap");
 body {
   margin: 0;
-  font-family: "Carter One", cursive;
-  font-family: "Handlee", cursive;
+  font-family: Arial, sans-serif;
   background-color: #f7f7f7;
   color: #333333;
   position: relative;
@@ -11,6 +10,7 @@ body {
   min-height: 100vh;
   background-image: url(../imagenes/fondo-web.png);
 }
+
 body a {
   text-decoration: none;
 }
@@ -23,6 +23,10 @@ body a {
 
 .navbar {
   background-color: #333333;
+}
+.navbar ul a {
+  display: flexbox;
+  justify-content: end;
 }
 
 /* Estilos de sección de intro */
