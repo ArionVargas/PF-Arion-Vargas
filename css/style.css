@@ -65,7 +65,7 @@ body a {
   transition: all 0.3s ease;
 }
 
-/* seccion de servicios */
+/* seccion de servicios index */
 #servicios {
   text-align: center;
 }
@@ -122,43 +122,6 @@ div .container #carouselExample {
   align-items: center;
 }
 
-/* pagina de contacto */
-#contacto {
-  background-color: #333333;
-  padding: 50px 0;
-  text-align: center;
-}
-#contacto h2 {
-  font-size: 2.5em;
-  color: #ffffff;
-}
-#contacto .linkcomentario {
-  text-decoration: none;
-}
-
-#contacto form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-}
-#contacto form label {
-  font-size: 1.2em;
-  color: #ffffff;
-  margin-bottom: 10px;
-}
-#contacto form input {
-  width: 100%;
-}
-#contacto textarea {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  font-size: 1.2em;
-}
-
 /* Estilos del pie de página */
 #footer {
   padding: 50px;
@@ -167,16 +130,6 @@ div .container #carouselExample {
   position: absolute;
   left: 0;
   right: 0;
-  /* a {
-      &:hover {
-          transform: scale(1.05);
-      }
-
-      &:link {
-          text-transform: uppercase;
-      }
-
-  } */
 }
 
 .linkpagina1 {
@@ -300,6 +253,44 @@ main .services .service img {
   border-color: black;
 }
 
+/* pagina de contacto */
+#contacto {
+  background-color: #333333;
+  padding: 50px 0;
+  text-align: center;
+}
+#contacto h2 {
+  font-size: 2.5em;
+  color: #ffffff;
+}
+#contacto .linkcomentario {
+  text-decoration: none;
+}
+
+#contacto form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+#contacto form label {
+  font-size: 1.2em;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+#contacto form input {
+  width: 100%;
+}
+#contacto textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+/* media queries */
 @media screen and (max-width: 768px) {
   .contenedors {
     grid-template-columns: 1fr;
@@ -326,6 +317,9 @@ main .services .service img {
 @media screen and (max-width: 768px) {
   main .services {
     grid-template-columns: 1fr;
+  }
+  .pedirturno {
+    width: 100%;
   }
 }
 

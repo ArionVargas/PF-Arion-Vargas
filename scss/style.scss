@@ -58,7 +58,8 @@
     }
 }
 
-/* seccion de servicios */
+/* seccion de servicios index */
+
 #servicios {
     text-align: center;
     
@@ -115,6 +116,7 @@
 }
 
 /* seccion de trabajos index */
+
 #trabajos {
     padding: 50px 0;
     text-align: center;
@@ -133,59 +135,8 @@ div .container #carouselExample {
     align-items: center;
 
 }
-
-
-
-
-
-/* pagina de contacto */
-#contacto {
-    background-color: $color;
-    padding: 50px 0;
-    text-align: center;
-
-    h2 {
-        font-size: $fontsizeh2;
-        color: #ffffff;
-    }
-
-    .linkcomentario {
-        text-decoration: none;
-    }
-}
-
-#contacto {
-
-    & form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
-
-        label {
-            font-size: $fontsizeparrafos;
-            color: #ffffff;
-            margin-bottom: 10px;
-        }
-
-        input {
-            width: $anchoylargomax;
-        }
-    }
-
-
-
-    textarea {
-        width: $anchoylargomax;
-        padding: 10px;
-        border: none;
-        margin-bottom: 20px;
-        border-radius: 5px;
-        font-size: 1.2em;
-    }
-}
-
 /* Estilos del pie de página */
+
 #footer {
     padding: 50px;
     text-align: center;
@@ -194,16 +145,6 @@ div .container #carouselExample {
     left: 0;
     right: 0;
 
-    /* a {
-        &:hover {
-            transform: scale(1.05);
-        }
-
-        &:link {
-            text-transform: uppercase;
-        }
-        
-    } */
 }
 
 .linkpagina1 {
@@ -230,8 +171,8 @@ div .container #carouselExample {
         text-transform: uppercase;
     }
 }
-
 /* pagina servicios */
+
 main .services {
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
@@ -254,7 +195,6 @@ main .services {
         }
     }
 }
-
 /* pagina de trabajos realizados */
 
 .cartas {
@@ -269,11 +209,6 @@ main .services {
     }
 
 }
-
-
-
-
-
 
 /* pagina pedi turno */
 
@@ -366,6 +301,54 @@ main .services {
 
 
 
+/* pagina de contacto */
 
+#contacto {
+    background-color: $color;
+    padding: 50px 0;
+    text-align: center;
+
+    h2 {
+        font-size: $fontsizeh2;
+        color: #ffffff;
+    }
+
+    .linkcomentario {
+        text-decoration: none;
+    }
+}
+
+#contacto {
+    & form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+
+        label {
+            font-size: $fontsizeparrafos;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: $anchoylargomax;
+        }
+    }
+
+
+
+    textarea {
+        width: $anchoylargomax;
+        padding: 10px;
+        border: none;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        font-size: 1.2em;
+    }
+}
+
+
+/* media queries */
 
 @import "partials/queries"
