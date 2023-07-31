@@ -2,77 +2,72 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <meta name="description" content="pagina de pedir turno para nuestros servicios">
-  <meta name="keywords"
-    content="pedir turno,turno para mesoterapia,turno para micropigmentacion de labios,turno para camuflaje de estrias,html,css,js,meta">
-  <title>Pedir-turno</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedir Turno</title>
+    <!-- <link rel="stylesheet" href="estilospedir.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="../index.html">Inicio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./servicios.html">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./trabajos-realizados.html">Trabajos realizados</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pedir-turno.html">Pedir turno</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contacto.html">Contacto</a>
-            </li>
-          </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="../index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./trabajos-realizados.html">Trabajos realizados</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pedir-turno.html">Pedir turno</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    
+      </header>
+    <div class="pedirturno">
+        <div class="container">
+            <h1>¡Pedi tu turno!</h1>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" required><label for="producto">Servicio:</label>
+                <select id="producto" name="producto" required>
+                    <option value="">Selecciona un servicio</option>
+                    <option value="producto1">Camuflaje de Estrias</option>
+                    <option value="producto2">Mesoterapia</option>
+                    <option value="producto3">Micropigmentacion de Labios</option>
+                    <option value="producto4">Delineado Permanente</option>
+                </select>
+                <button type="submit" class="btn">Pedir Turno</button>
+            </form>
         </div>
-      </div>
-    </nav>
-
-  </header>
-  <div id="pedirturno">
-    <label for="nombre">Nombre completo:</label>
-    <input type="text" id="nombre" name="nombre" required>
-    <br>
-    <label for="email">Correo electrónico:</label>
-    <input type="email" id="email" name="email" required>
-    <br>
-    <label for="telefono">Teléfono:</label>
-    <input type="tel" id="telefono" name="telefono" required>
-    <br>
-    <label for="fecha">Fecha para el turno:</label>
-    <input type="datetime-local" id="fecha" name="fecha" required>
-    <br>
-    <label for="servicio">Servicio solicitado:</label>
-    <select id="servicio" name="servicio" required>
-      <option value="">--Seleccione una opción--</option>
-      <option value="camuflaje de estrias">camuflaje de estrias</option>
-      <option value="mesoterapia">mesoterapia</option>
-      <option value="micropigmentacion">micropigmentacion</option>
-      <option value="delineado permanente">delineado permanente</option>
-      <br>
-      <input type="submit" value="pedir turno">
-
-    </select>
-  </div>
-  <section id="footer">
-    <p>Centro de Estética Femenino &copy; 2023.Nuestras redes sociales son</p>
-    <a class="linkpagina1" href="https://www.facebook.com/camuflaje.deestrias.96?mibextid=ZbWKwL">Facebook </a>
-    <a class="linkpagina2" href="https://instagram.com/deestriastw?igshid=ZDc4ODBmNjlmNQ=="> Instagram</a>
-  </section>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    </div>
+    <section id="footer">
+        <p>Centro de Estética Femenino &copy; 2023.Nuestras redes sociales son</p>
+        <a href="https://www.facebook.com/camuflaje.deestrias.96?mibextid=ZbWKwL" class="linkpagina1">Facebook </a>
+        <a href="https://instagram.com/deestriastw?igshid=ZDc4ODBmNjlmNQ==" class="linkpagina2"> Instagram</a>
+      </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
 </body>

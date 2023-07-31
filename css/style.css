@@ -37,6 +37,20 @@ body a {
   background-position: center;
   color: #ffffff;
 }
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#intro h1 {
+  animation: fadeInOut 3s infinite;
+}
 #intro h1 {
   font-size: 3em;
   margin-bottom: 20px;
@@ -108,15 +122,6 @@ div .container #carouselExample {
   align-items: center;
 }
 
-.linkpagina1 {
-  text-decoration: none;
-  color: blue;
-}
-
-.linkpagina2 {
-  color: red;
-}
-
 /* pagina de contacto */
 #contacto {
   background-color: #333333;
@@ -162,15 +167,37 @@ div .container #carouselExample {
   position: absolute;
   left: 0;
   right: 0;
+  /* a {
+      &:hover {
+          transform: scale(1.05);
+      }
+
+      &:link {
+          text-transform: uppercase;
+      }
+
+  } */
 }
-#footer a:link {
+
+.linkpagina1 {
+  text-decoration: none;
+  color: blue;
+}
+.linkpagina1:hover {
+  transform: scale(1.05);
+}
+.linkpagina1:link {
   text-transform: uppercase;
 }
-#footer a:hover {
+
+.linkpagina2 {
+  color: red;
+}
+.linkpagina2:hover {
   transform: scale(1.05);
 }
-#footer a:active {
-  transform: scale(1.05);
+.linkpagina2:link {
+  text-transform: uppercase;
 }
 
 /* pagina servicios */
@@ -205,13 +232,72 @@ main .services .service img {
 }
 
 /* pagina pedi turno */
-#pedirturno {
-  padding: 9%;
-  text-align: center;
+.pedirturno .container {
+  width: 50%;
+  margin-top: 6%;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-#pedirturno label {
-  padding: 5px;
-  font-size: 20px;
+.pedirturno .container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.pedirturno .container form {
+  display: flex;
+  flex-direction: column;
+}
+.pedirturno .container label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.pedirturno .container input {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+.pedirturno .container input:focus {
+  border-color: dodgerblue;
+}
+.pedirturno .container .btn {
+  background-color: #333333;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.pedirturno .container .btn:hover {
+  background-color: black;
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.pedirturno .container h1 {
+  animation: fadeInOut 3s infinite;
+}
+.pedirturno .container select {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+.pedirturno .container select:focus {
+  border-color: black;
 }
 
 @media screen and (max-width: 768px) {

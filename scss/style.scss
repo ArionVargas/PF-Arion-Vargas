@@ -23,10 +23,28 @@
     background-size: cover;
     background-position: center;
     color: #ffffff;
+    @keyframes fadeInOut {
+        0% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    h1 {
+        animation: fadeInOut 3s infinite;
+    }
 
     h1 {
         font-size: 3em;
         margin-bottom: 20px;
+        
     }
 
     a {
@@ -43,6 +61,7 @@
 /* seccion de servicios */
 #servicios {
     text-align: center;
+    
 
     h2 {
         font-size: $fontsizeh2;
@@ -117,14 +136,7 @@ div .container #carouselExample {
 
 
 
-.linkpagina1 {
-    text-decoration: none;
-    color: blue;
-}
 
-.linkpagina2 {
-    color: red;
-}
 
 /* pagina de contacto */
 #contacto {
@@ -182,25 +194,42 @@ div .container #carouselExample {
     left: 0;
     right: 0;
 
-    a:link {
-        text-transform: uppercase;
-
-
-    }
-
-    a {
+    /* a {
         &:hover {
-            transform: scale(1.05)
-        }
-
-        &:active {
             transform: scale(1.05);
         }
-    }
 
-
+        &:link {
+            text-transform: uppercase;
+        }
+        
+    } */
 }
 
+.linkpagina1 {
+    text-decoration: none;
+    color: blue;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &:link {
+        text-transform: uppercase;
+    }
+}
+
+.linkpagina2 {
+    color: red;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &:link {
+        text-transform: uppercase;
+    }
+}
 
 /* pagina servicios */
 main .services {
@@ -248,16 +277,92 @@ main .services {
 
 /* pagina pedi turno */
 
-#pedirturno {
-    padding: 9%;
-    text-align: center;
 
-    label {
-        padding: 5px;
-        font-size: 20px;
+.pedirturno {
+    .container {
+        width: $anchoylargochico;
+        margin-top: 6%;
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid black;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus {
+            border-color: dodgerblue;
+        }
+
+        .btn {
+            background-color: $color;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: black;
+        }
+
+        @keyframes fadeInOut {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        h1 {
+            animation: fadeInOut 3s infinite;
+        }
+
+        select {
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid black;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+            width: 100%;
+        }
+
+        select:focus {
+            border-color: black;
+        }
     }
-}
 
+    
+}
 
 
 
