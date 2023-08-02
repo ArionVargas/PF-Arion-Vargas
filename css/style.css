@@ -64,6 +64,9 @@ body a {
   text-decoration: none;
   transition: all 0.3s ease;
 }
+#intro a:hover {
+  background-color: black;
+}
 
 /* seccion de servicios index */
 #servicios {
@@ -215,7 +218,7 @@ main .services .service img {
 .pedirturno .container input:focus {
   border-color: dodgerblue;
 }
-.pedirturno .container .btn {
+.pedirturno .container .btn, .pedirturno .container .btn-big {
   background-color: #333333;
   color: #fff;
   padding: 10px 15px;
@@ -224,7 +227,7 @@ main .services .service img {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.pedirturno .container .btn:hover {
+.pedirturno .container .btn:hover, .pedirturno .container .btn-big:hover {
   background-color: black;
 }
 @keyframes fadeInOut {
@@ -288,6 +291,22 @@ main .services .service img {
   margin-bottom: 20px;
   border-radius: 5px;
   font-size: 1.2em;
+}
+
+/* extend de btn */
+.btn, .btn-big {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 1.2em;
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-big {
+  padding: 10px 15px;
+  cursor: pointer;
 }
 
 /* media queries */

@@ -23,6 +23,7 @@
     background-size: cover;
     background-position: center;
     color: #ffffff;
+
     @keyframes fadeInOut {
         0% {
             opacity: 0;
@@ -44,17 +45,20 @@
     h1 {
         font-size: 3em;
         margin-bottom: 20px;
-        
+
     }
 
     a {
-        background-color: #333333;
+        background-color: $color;
         color: #ffffff;
         font-size: $fontsizeparrafos;
         padding: 5px 20px;
         border-radius: 5px;
         text-decoration: none;
         transition: all 0.3s ease;
+        &:hover {
+            background-color: black;
+        }
     }
 }
 
@@ -62,7 +66,7 @@
 
 #servicios {
     text-align: center;
-    
+
 
     h2 {
         font-size: $fontsizeh2;
@@ -135,6 +139,7 @@ div .container #carouselExample {
     align-items: center;
 
 }
+
 /* Estilos del pie de página */
 
 #footer {
@@ -171,6 +176,7 @@ div .container #carouselExample {
         text-transform: uppercase;
     }
 }
+
 /* pagina servicios */
 
 main .services {
@@ -195,6 +201,7 @@ main .services {
         }
     }
 }
+
 /* pagina de trabajos realizados */
 
 .cartas {
@@ -255,7 +262,7 @@ main .services {
             color: #fff;
             padding: 10px 15px;
             border: none;
-            border-radius: 5px;
+            border-radius: $borderadius;
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
@@ -296,7 +303,7 @@ main .services {
         }
     }
 
-    
+
 }
 
 
@@ -347,6 +354,24 @@ main .services {
         font-size: 1.2em;
     }
 }
+/* extend de btn */
+
+.btn {
+    background-color: $color;
+    color: #ffffff;
+    font-size: $fontsizeparrafos;
+    padding: 5px 20px;
+    border-radius: $borderadius;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.btn-big {
+    @extend .btn;
+    padding: 10px 15px;
+    cursor: pointer;
+
+}
+
 
 
 /* media queries */
