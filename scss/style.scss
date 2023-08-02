@@ -14,18 +14,19 @@
 }
 
 .navbar {
-    background-color: #333333;
+    background-color: $color;
 }
 
 /* Estilos de sección de intro */
 #intro {
+   height: 55vh;
     text-align: center;
-    text-emphasis-color: red;
-    padding: 50px;
-    background-image: url("../imagenes/fondoinicio.jpg");
+    /* padding: 50px; */
     margin-top: 4%;
+    background-image: url(../imagenes/imageninicioweb.webp);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     color: #ffffff;
 
     @keyframes fadeInOut {
@@ -44,12 +45,8 @@
 
     h1 {
         animation: fadeInOut 3s infinite;
-    }
-
-    h1 {
         font-size: 4em;
         margin-bottom: 20px;
-
     }
 
     a {

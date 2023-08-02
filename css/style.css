@@ -40,13 +40,14 @@ h3 {
 
 /* Estilos de sección de intro */
 #intro {
+  height: 55vh;
   text-align: center;
-  text-emphasis-color: red;
-  padding: 50px;
-  background-image: url("../imagenes/fondoinicio.jpg");
+  /* padding: 50px; */
   margin-top: 4%;
+  background-image: url(../imagenes/imageninicioweb.webp);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   color: #ffffff;
 }
 @keyframes fadeInOut {
@@ -62,8 +63,6 @@ h3 {
 }
 #intro h1 {
   animation: fadeInOut 3s infinite;
-}
-#intro h1 {
   font-size: 4em;
   margin-bottom: 20px;
 }
