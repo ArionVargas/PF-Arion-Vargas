@@ -16,6 +16,18 @@ body a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
 /* Estilos para elementos de encabezado y navegación */
 .navbar-brand,
 .nav-link {
@@ -52,7 +64,7 @@ body a {
   animation: fadeInOut 3s infinite;
 }
 #intro h1 {
-  font-size: 3em;
+  font-size: 4em;
   margin-bottom: 20px;
 }
 #intro a {
