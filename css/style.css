@@ -50,6 +50,15 @@ h3 {
   background-repeat: no-repeat;
   color: #ffffff;
 }
+#intro h1 {
+  font-size: 3rem;
+}
+#intro h2 {
+  font-size: 2.6rem;
+}
+#intro h3 {
+  font-size: 2.3rem;
+}
 @keyframes fadeInOut {
   0% {
     opacity: 0;
@@ -82,6 +91,15 @@ h3 {
 /* seccion de servicios index */
 #servicios {
   text-align: center;
+}
+#servicios h1 {
+  font-size: 3rem;
+}
+#servicios h2 {
+  font-size: 2.6rem;
+}
+#servicios h3 {
+  font-size: 2.3rem;
 }
 #servicios h2 {
   font-size: 2.5em;
@@ -318,6 +336,10 @@ main .services .service img {
 .btn-big {
   padding: 10px 15px;
   cursor: pointer;
+}
+
+.btn-small {
+  @es;
 }
 
 /* media queries */

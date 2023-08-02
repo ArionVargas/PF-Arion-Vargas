@@ -28,6 +28,7 @@
     background-position: center;
     background-repeat: no-repeat;
     color: #ffffff;
+    @include encabezados (3rem);
 
     @keyframes fadeInOut {
         0% {
@@ -67,7 +68,7 @@
 
 #servicios {
     text-align: center;
-
+    @include encabezados (3rem);
 
     h2 {
         font-size: $fontsizeh2;
@@ -370,6 +371,12 @@ main .services {
     padding: 10px 15px;
     cursor: pointer;
 
+}
+.btn-chico {
+    @extend .btn;
+    font-size: 1em;
+    padding: 1px 5px;
+    cursor: pointer;
 }
 
 
