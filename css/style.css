@@ -51,13 +51,13 @@ h3 {
   color: #ffffff;
 }
 #intro h1 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 #intro h2 {
-  font-size: 2.6rem;
+  font-size: 1.6rem;
 }
 #intro h3 {
-  font-size: 2.3rem;
+  font-size: 1.3rem;
 }
 @keyframes fadeInOut {
   0% {
@@ -93,13 +93,13 @@ h3 {
   text-align: center;
 }
 #servicios h1 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 #servicios h2 {
-  font-size: 2.6rem;
+  font-size: 1.6rem;
 }
 #servicios h3 {
-  font-size: 2.3rem;
+  font-size: 1.3rem;
 }
 #servicios h2 {
   font-size: 2.5em;
@@ -194,11 +194,12 @@ main .services {
   margin-top: 3%;
 }
 main .services .service {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.4);
   padding: 10px;
   padding: 1rem;
   border-radius: 5px;
   text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 main .services .service img {
   width: 100%;
@@ -214,6 +215,7 @@ main .services .service img {
 }
 .cartas .card {
   background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 /* pagina pedi turno */
@@ -223,7 +225,7 @@ main .services .service img {
   background-color: rgba(255, 255, 255, 0.2);
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 .pedirturno .container h1 {
   text-align: center;
@@ -247,7 +249,7 @@ main .services .service img {
 .pedirturno .container input:focus {
   border-color: dodgerblue;
 }
-.pedirturno .container .btn, .pedirturno .container .btn-big {
+.pedirturno .container .btn, .pedirturno .container .btn-chico, .pedirturno .container .btn-big {
   background-color: #333333;
   color: #fff;
   padding: 10px 15px;
@@ -256,7 +258,7 @@ main .services .service img {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.pedirturno .container .btn:hover, .pedirturno .container .btn-big:hover {
+.pedirturno .container .btn:hover, .pedirturno .container .btn-chico:hover, .pedirturno .container .btn-big:hover {
   background-color: black;
 }
 @keyframes fadeInOut {
@@ -287,9 +289,13 @@ main .services .service img {
 
 /* pagina de contacto */
 #contacto {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
   background-color: #333333;
   padding: 50px 0;
-  text-align: center;
+  height: 80vh;
 }
 #contacto h2 {
   font-size: 2.5em;
@@ -323,7 +329,7 @@ main .services .service img {
 }
 
 /* extend de btn */
-.btn, .btn-big {
+.btn, .btn-chico, .btn-big {
   background-color: #333333;
   color: #ffffff;
   font-size: 1.2em;
@@ -338,8 +344,10 @@ main .services .service img {
   cursor: pointer;
 }
 
-.btn-small {
-  @es;
+.btn-chico {
+  font-size: 1em;
+  padding: 1px 5px;
+  cursor: pointer;
 }
 
 /* media queries */

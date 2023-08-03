@@ -19,7 +19,7 @@
 
 /* Estilos de sección de intro */
 #intro {
-   height: 55vh;
+    height: 55vh;
     text-align: center;
     /* padding: 50px; */
     margin-top: 4%;
@@ -28,7 +28,7 @@
     background-position: center;
     background-repeat: no-repeat;
     color: #ffffff;
-    @include encabezados (3rem);
+    @include encabezados (2rem);
 
     @keyframes fadeInOut {
         0% {
@@ -58,6 +58,7 @@
         border-radius: 5px;
         text-decoration: none;
         transition: all 0.3s ease;
+
         &:hover {
             background-color: black;
         }
@@ -68,7 +69,7 @@
 
 #servicios {
     text-align: center;
-    @include encabezados (3rem);
+    @include encabezados (2rem);
 
     h2 {
         font-size: $fontsizeh2;
@@ -188,11 +189,12 @@ main .services {
     margin-top: 3%;
 
     .service {
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.4);
         padding: 10px;
         padding: 1rem;
         border-radius: 5px;
         text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 
         img {
             width: $anchoylargomax;
@@ -213,6 +215,7 @@ main .services {
 
     .card {
         background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 
     }
 
@@ -228,7 +231,7 @@ main .services {
         background-color: rgba(255, 255, 255, 0.2);
         padding: 30px;
         border-radius: 10px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 
 
         h1 {
@@ -312,9 +315,16 @@ main .services {
 /* pagina de contacto */
 
 #contacto {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
     background-color: $color;
     padding: 50px 0;
-    text-align: center;
+    height: 80vh;
+
+
 
     h2 {
         font-size: $fontsizeh2;
@@ -355,6 +365,7 @@ main .services {
         font-size: 1.2em;
     }
 }
+
 /* extend de btn */
 
 .btn {
@@ -366,12 +377,14 @@ main .services {
     text-decoration: none;
     transition: all 0.3s ease;
 }
+
 .btn-big {
     @extend .btn;
     padding: 10px 15px;
     cursor: pointer;
 
 }
+
 .btn-chico {
     @extend .btn;
     font-size: 1em;
