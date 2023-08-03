@@ -8,7 +8,8 @@
       padding: 20px;
       bottom: 0;
     }
-    .galeria-img{
+
+    .galeria-img {
       width: 100%;
     }
 
@@ -23,8 +24,18 @@
     width: 100%;
   }
 
-  #pedirturno {
-    margin-top: 5%;
+  .pedirturno {
+    .container {
+      margin-top: 5%;
+      width: 100%;
+    }
+  }
+
+  #contacto {
+    form {
+      width: 100%;
+      margin-top: 10px;
+    }
   }
 }
 
@@ -32,8 +43,10 @@
   main .services {
     grid-template-columns: 1fr;
   }
+
   .pedirturno {
     width: $anchoylargomax;
   }
+
 
 }

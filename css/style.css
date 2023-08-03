@@ -154,6 +154,23 @@ div .container #carouselExample {
   align-items: center;
 }
 
+/* seccion contacto index */
+#contacto-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #333333;
+  height: 250px;
+}
+#contacto-index h2 {
+  font-size: 2.5em;
+  color: #ffffff;
+}
+#contacto-index .linkcomentario {
+  text-decoration: none;
+}
+
 /* Estilos del pie de página */
 #footer {
   padding: 50px;
@@ -249,7 +266,7 @@ main .services .service img {
 .pedirturno .container input:focus {
   border-color: dodgerblue;
 }
-.pedirturno .container .btn, .pedirturno .container .btn-chico, .pedirturno .container .btn-big {
+.pedirturno .container .btn, .pedirturno .container .btn-cont, .pedirturno .container #contacto form .boton, #contacto form .pedirturno .container .boton, .pedirturno .container .btn-chico, .pedirturno .container .btn-big {
   background-color: #333333;
   color: #fff;
   padding: 10px 15px;
@@ -258,7 +275,7 @@ main .services .service img {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.pedirturno .container .btn:hover, .pedirturno .container .btn-chico:hover, .pedirturno .container .btn-big:hover {
+.pedirturno .container .btn:hover, .pedirturno .container .btn-cont:hover, .pedirturno .container #contacto form .boton:hover, #contacto form .pedirturno .container .boton:hover, .pedirturno .container .btn-chico:hover, .pedirturno .container .btn-big:hover {
   background-color: black;
 }
 @keyframes fadeInOut {
@@ -291,10 +308,8 @@ main .services .service img {
 #contacto {
   display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
   flex-direction: column;
-  background-color: #333333;
-  padding: 50px 0;
   height: 80vh;
 }
 #contacto h2 {
@@ -304,12 +319,13 @@ main .services .service img {
 #contacto .linkcomentario {
   text-decoration: none;
 }
-
 #contacto form {
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  background-color: #333333;
+  border-radius: 5px;
 }
 #contacto form label {
   font-size: 1.2em;
@@ -318,6 +334,10 @@ main .services .service img {
 }
 #contacto form input {
   width: 100%;
+}
+#contacto form .boton {
+  width: 25%;
+  color: #ffffff;
 }
 #contacto textarea {
   width: 100%;
@@ -329,7 +349,7 @@ main .services .service img {
 }
 
 /* extend de btn */
-.btn, .btn-chico, .btn-big {
+.btn, .btn-cont, #contacto form .boton, .btn-chico, .btn-big {
   background-color: #333333;
   color: #ffffff;
   font-size: 1.2em;
@@ -348,6 +368,14 @@ main .services .service img {
   font-size: 1em;
   padding: 1px 5px;
   cursor: pointer;
+}
+
+.btn-cont, #contacto form .boton {
+  padding: 10px 15px;
+  cursor: pointer;
+  color: #333333;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
 }
 
 /* media queries */
@@ -370,8 +398,13 @@ main .services .service img {
   #intro {
     width: 100%;
   }
-  #pedirturno {
+  .pedirturno .container {
     margin-top: 5%;
+    width: 100%;
+  }
+  #contacto form {
+    width: 100%;
+    margin-top: 10px;
   }
 }
 @media screen and (max-width: 768px) {

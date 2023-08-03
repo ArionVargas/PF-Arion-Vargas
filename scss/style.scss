@@ -142,6 +142,27 @@ div .container #carouselExample {
 
 }
 
+/* seccion contacto index */
+
+#contacto-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $color;
+    height: 250px;
+
+    h2 {
+        font-size: $fontsizeh2;
+        color: #ffffff;
+    }
+
+    .linkcomentario {
+        text-decoration: none;
+    }
+
+}
+
 /* Estilos del pie de página */
 
 #footer {
@@ -318,10 +339,8 @@ main .services {
 
     display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     flex-direction: column;
-    background-color: $color;
-    padding: 50px 0;
     height: 80vh;
 
 
@@ -334,14 +353,14 @@ main .services {
     .linkcomentario {
         text-decoration: none;
     }
-}
 
-#contacto {
-    & form {
+    & form { 
+        width: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 20px;
+        background-color: $color;
+        border-radius: $borderadius;
 
         label {
             font-size: $fontsizeparrafos;
@@ -351,6 +370,13 @@ main .services {
 
         input {
             width: $anchoylargomax;
+
+        }
+
+        .boton {
+            width: 25%;
+            @extend .btn-cont;
+            color: #ffffff;
         }
     }
 
@@ -365,6 +391,8 @@ main .services {
         font-size: 1.2em;
     }
 }
+
+
 
 /* extend de btn */
 
@@ -390,6 +418,15 @@ main .services {
     font-size: 1em;
     padding: 1px 5px;
     cursor: pointer;
+}
+.btn-cont {
+    @extend .btn;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: $color;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+
 }
 
 
